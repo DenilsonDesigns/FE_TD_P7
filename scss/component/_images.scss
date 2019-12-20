@@ -26,3 +26,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.logo {
+  @media (min-width: $break-point) {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
