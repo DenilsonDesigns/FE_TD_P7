@@ -11,3 +11,11 @@ $light-purple: #927bc1;
 $light-green: #63cc82;
 $light-orange: #fd7856;
 $break-point: 768px;
+
+$button-styles: (
+  "default": $light-blue,
+  "error": $light-red,
+  "info": $light-purple,
+  "success": $light-green,
+  "warning": $light-orange
+);
