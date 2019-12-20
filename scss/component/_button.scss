@@ -10,11 +10,11 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     padding: 10px 30px;
   }
   + .btn {
-    @media (min-width: $break-point) {
+    @include mq($break-point) {
       margin-left: 10px;
     }
   }
@@ -22,20 +22,40 @@
 
 .default {
   background-color: $light-blue;
+  &:hover {
+    background-color: lighten($light-blue, 15%);
+    transition: background-color 1s;
+  }
 }
 
 .error {
   background-color: $light-red;
+  &:hover {
+    background-color: lighten($light-red, 15%);
+    transition: background-color 1s;
+  }
 }
 
 .info {
   background-color: $light-purple;
+  &:hover {
+    background-color: lighten($light-purple, 15%);
+    transition: background-color 1s;
+  }
 }
 
 .success {
   background-color: $light-green;
+  &:hover {
+    background-color: lighten($light-green, 15%);
+    transition: background-color 1s;
+  }
 }
 
 .warning {
   background-color: $light-orange;
+  &:hover {
+    background-color: lighten($light-orange, 15%);
+    transition: background-color 1s;
+  }
 }

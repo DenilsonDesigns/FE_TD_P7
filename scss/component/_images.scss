@@ -28,7 +28,7 @@
 }
 
 .logo {
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     margin-left: initial;
     margin-right: initial;
   }

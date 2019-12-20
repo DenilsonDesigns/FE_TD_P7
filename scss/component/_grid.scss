@@ -4,7 +4,7 @@
 
 .container {
   padding: 0 10px;
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     max-width: 1400px;
     display: block;
     margin-left: auto;
@@ -13,7 +13,7 @@
 }
 
 .centered {
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     flex-direction: row;
   }
 }
@@ -36,7 +36,7 @@
   padding: 10px;
   border-radius: 5px;
 
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     display: flex;
     justify-content: center;
     margin-top: 0;
@@ -45,13 +45,13 @@
 }
 
 [class^="col"] + [class^="col"] {
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     margin-left: 10px;
   }
 }
 
 @for $i from 1 through 12 {
-  @media (min-width: $break-point) {
+  @include mq($break-point) {
     .col-#{$i} {
       flex-basis: round((8.33333333333% * $i) * 1000) / 1000;
     }
