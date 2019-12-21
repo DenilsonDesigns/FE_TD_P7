@@ -1,1 +1,1 @@
-# FETD Project 4
+# Basic SASS starter w/ Folder Structure
