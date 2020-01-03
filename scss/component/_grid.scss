@@ -1,3 +1,43 @@
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav heading searchbar"
+    "nav alert alert";
+  // "nav linechart linechart"
+  // "nav barchart piechart"
+  // "nav social-heading social-heading"
+  // "nav twitter facebook google"
+  // "nav traffic users-pie"
+  // "nav social-stats social-stats"
+  // "nav new-members recent-act"
+  // "nav msg-user settings";
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+}
+
+#nav-main {
+  grid-area: nav;
+  background-color: purple;
+  width: 100px;
+}
+
+#dashboard-heading {
+  grid-area: heading;
+  background-color: red;
+}
+
+#search-area {
+  grid-area: searchbar;
+}
+
+.alert {
+  grid-area: alert;
+}

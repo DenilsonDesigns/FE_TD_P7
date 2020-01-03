@@ -365,6 +365,35 @@ template {
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
+.grid {
+  display: grid;
+  grid-template-areas: "header header header" "nav heading searchbar" "nav alert alert";
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+}
+
+#nav-main {
+  grid-area: nav;
+  background-color: purple;
+  width: 100px;
+}
+
+#dashboard-heading {
+  grid-area: heading;
+  background-color: red;
+}
+
+#search-area {
+  grid-area: searchbar;
+}
+
+.alert {
+  grid-area: alert;
+}
+
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
